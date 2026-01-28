@@ -12,6 +12,7 @@ The most easy part was doing the basic HTML skeleton for the project.
 ## What was the hardest part ?
 
 The hardest part was organizing the HTML in order to style it with CSS to make the styling more easy.
+The Regular Expression for the password pattern was also really hard to do. To help me I found a regular expression for password on Google then I adapted it.
 
 ## Design
 

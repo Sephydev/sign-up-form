@@ -50,11 +50,23 @@
             <div class="form-row">
               <div class="form-cell">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input 
+                  pattern="^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,}$" 
+                  minlength="8"
+                  type="password" 
+                  name="password" 
+                  id="password"
+                >
               </div>
               <div class="form-cell">
                 <label for="confirm-password">Confirm password</label>
-                <input minlength="8" type="password" name="confirm-password" id="confirm-password">
+                <input 
+                  pattern="^(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z]).{8,}$" 
+                  minlength="8" 
+                  type="password" 
+                  name="confirm-password" 
+                  id="confirm-password"
+                >
               </div>
             </div>
           </div>
