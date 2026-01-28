@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Nord";
+  src: 
+    url('./assets/fonts/Norse.woff2') format('woff2'), 
+    url('./assets/fonts/Norse.woff') format('woff');
+}
+
 *,
 *::before,
 *::after {
@@ -8,11 +15,55 @@
 
 body {
   height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+}
+
+.left-side {
+  background-image: url('./assets/img/background-img.jpg');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height: 100vh;
+  width: 50%;
+  color: white;
+  gap: 25rem;
+  padding: 1rem;
+}
+
+.left-side div {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.left-side div p {
+  font-family: 'Nord', system-ui, sans-serif;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.left-side img {
+  width: 100px;
+}
+
+.left-side > p a {
+  color: white;
 }
 
 .right-side {
   font-family: system-ui, sans-serif;
   height: 100vh;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
